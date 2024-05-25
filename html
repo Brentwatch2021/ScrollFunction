@@ -1,0 +1,1265 @@
+<html>
+    <head>
+        <title>Howzit</title>
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                border: 1px solid black;
+                padding: 8px;
+                text-align: left;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+            #container {
+                height: 400px;
+                overflow: auto;
+                border: 1px solid #ccc;
+                scroll-behavior: smooth ; /* Enables smooth scrolling */
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="scrollToLastRow()">Scroll To Last Row</button>
+        <script src="script.js"></script>
+        <div id="container">
+        <table id="food">
+            <tr>
+                <td>Branded Material</td>
+                <td>Debit</td>
+                <td>Credit</td>
+                <td>Balance</td>
+                <td>Change In Value</td>
+                <td>Change In Stock</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr id="lucky">
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr >
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+            <tr>
+                <td>Steers 1000 island Chip Sauce</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>BBQ Chicken Wings</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L - 25L</td>
+                <td>1 x 15L</td>
+                <td>Adjustment: R1500</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Spicy Tuna Roll</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L - 90L</td>
+                <td>3 x 30L</td>
+                <td>Adjustment: R3000</td>
+                <td>+ 3 New Units</td>
+            </tr>
+            <tr>
+                <td>Veggie Burger</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L - 40L</td>
+                <td>2 x 20L</td>
+                <td>Adjustment: R2000</td>
+                <td>+ 2 New Units</td>
+            </tr>
+            <tr>
+                <td>Cheese Pizza</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L - 25L</td>
+                <td>1 x 25L</td>
+                <td>Adjustment: R1000</td>
+                <td>+ 1 New Unit</td>
+            </tr>
+            <tr>
+                <td>Chicken Alfredo Pasta</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L - 40L</td>
+                <td>4 x 10L</td>
+                <td>Adjustment: R4000</td>
+                <td>+ 4 New Units</td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>
